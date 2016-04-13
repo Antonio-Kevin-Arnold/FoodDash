@@ -5,15 +5,15 @@ From 5k to Couch
 
 ## User Stories
 
-- [X] Pulls images from the Instagram API
+- [ ] Pulls images from the Instagram API
 - [ ] Detail view controller when clicking on image of food that details the average price, average wait time, location and recommended item
-- [ ] Food Run navigation bar button
-
+- [ ] Summary view controller that details the total price and time
+- [ ] Map view controller that contains all the locations of the selected restaurants
 
 ## Optionals
 
 ## Wireframe
-
+<img src='http://i.imgur.com/MFio9CA.jpg' title='Wireframe' width='' alt='Wireframe' />
 ## License
 
     Copyright [2016] [Antonio Singh, Kevin Ho, Arnold Ballesteros]
