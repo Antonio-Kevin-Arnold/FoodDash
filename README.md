@@ -5,7 +5,7 @@ From 5k to Couch
 
 ## User Stories
 
-- [ ] Pulls images from the Instagram API
+- [X] Pulls images from the Instagram API
 - [ ] Detail view controller when clicking on image of food that details the average price, average wait time, location and recommended item
 - [ ] Summary view controller that details the total price and time
 - [ ] Map view controller that contains all the locations of the selected restaurants
