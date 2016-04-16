@@ -6,6 +6,7 @@ use_frameworks!
 target 'FoodRun' do
 
 pod 'AFNetworking', '3.0.0'
+pod 'MBProgressHUD', '0.9.2'
 
 end
 

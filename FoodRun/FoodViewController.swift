@@ -8,6 +8,7 @@
 
 import UIKit
 import AFNetworking
+import MBProgressHUD
 
 class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -18,10 +19,16 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(FoodViewController.refreshControlAction(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        tableView.insertSubview(refreshControl, atIndex: 0)
+        
+        tableView.backgroundView = nil;
+        
         tableView.dataSource = self
         tableView.delegate = self
         
-        let url = NSURL(string: "https://api.instagram.com/v1/users/338693018/media/recent/?access_token=2253563781.137bf98.bd1c3693d2b84f80a7ab8d661f641437")
+        let url = NSURL(string: "https://api.instagram.com/v1/users/338693018/media/recent/?access_token=2253563781.137bf98.bd1c3693d2b84f80a7ab8d661f641437&count=33")
         
         let request = NSURLRequest(URL: url!)
         let session = NSURLSession(
@@ -30,13 +37,16 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
             delegateQueue: NSOperationQueue.mainQueue()
         )
         
+        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        
         let task: NSURLSessionDataTask = session.dataTaskWithRequest(request,
             completionHandler: { (dataOrNil, response, error) in
                     if let data = dataOrNil {
-                        if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData (data, options:[]) as? NSDictionary
-                        {
-                            //print(responseDictionary) // Print Statement
+                        if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData (data, options:[]) as? NSDictionary {
+                
                             self.images = responseDictionary["data"] as? [NSDictionary]
+                            MBProgressHUD.hideHUDForView(self.view, animated: true)
+                            
                             self.tableView.reloadData()
                         }
                 }
@@ -65,7 +75,7 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let image = images![indexPath.row]
         
             let image1 = image["images"] as! [String: AnyObject]
-            let image2 = image1["low_resolution"] as! [String: AnyObject]
+            let image2 = image1["standard_resolution"] as! [String: AnyObject]
             let image3 = image2["url"] as! String
         
         let imageUrl = NSURL(string: image3)
@@ -74,14 +84,25 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
     
-    /*
+    func refreshControlAction(refreshControl: UIRefreshControl) {
+        self.tableView.reloadData()
+        refreshControl.endRefreshing()
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPathForCell(cell)
+        let image = images! [indexPath!.row]
+            
+        let detailViewController = segue.destinationViewController as! DetailViewController
+        detailViewController.image = image
+        }
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
-
-}
