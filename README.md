@@ -6,11 +6,13 @@ From 5k to Couch
 ## User Stories
 
 - [X] Pulls images from the Instagram API
-- [ ] Detail view controller when clicking on image of food that details the average price, average wait time, location and recommended item
+- [ ] Detail view controller when clicking on the tableview cell that details the location, item, price and estimated wait
 - [ ] Summary view controller that details the total price and time
-- [ ] Map view controller that contains all the locations of the selected restaurants
+- [ ] Map view controller that contains the location of the selected restaurant
 
 ## Optionals
+- [X] Progress HUD
+- [X] Pull to Refresh
 
 ## Wireframe
 <img src='http://i.imgur.com/MFio9CA.jpg' title='Wireframe' width='' alt='Wireframe' />
