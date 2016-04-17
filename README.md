@@ -16,6 +16,15 @@ From 5k to Couch
 
 ## Wireframe
 <img src='http://i.imgur.com/MFio9CA.jpg' title='Wireframe' width='' alt='Wireframe' />
+
+## Video Walkthrough 
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://i.imgur.com/ND08Wk3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 ## License
 
     Copyright [2016] [Antonio Singh, Kevin Ho, Arnold Ballesteros]
