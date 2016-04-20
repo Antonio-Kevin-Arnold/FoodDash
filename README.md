@@ -11,6 +11,7 @@ From 5k to Couch
 - [X] Map view controller that displays the location of the selected restaurant and the user's location
 
 ## Optionals
+- [X] Launch Screen
 - [X] Progress HUD
 - [X] Pull to Refresh
 
