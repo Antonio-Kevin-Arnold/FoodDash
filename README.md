@@ -6,7 +6,7 @@ From 5k to Couch
 ## User Stories
 
 - [X] Pulls images from the Instagram API
-- [ ] Detail view controller when clicking on the tableview cell that details the location, item, price and estimated wait
+- [X] Detail view controller when clicking on the tableview cell that details the location, item, price and estimated wait
 - [ ] Summary view controller that details the total price and time of all locations selected
 - [X] Map view controller that displays the location of the selected restaurant and the user's location
 
