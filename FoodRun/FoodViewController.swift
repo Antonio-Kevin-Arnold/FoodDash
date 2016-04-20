@@ -16,6 +16,9 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var images: [NSDictionary]?
     
+    var price: Double = 5.00
+    var wait: Int = 30
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -95,14 +98,21 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
-        let cell = sender as! UITableViewCell
-        let indexPath = tableView.indexPathForCell(cell)
-        let image = images! [indexPath!.row]
-            
-        let detailViewController = segue.destinationViewController as! DetailViewController
-        detailViewController.image = image
-        }
+        let whoIsSender = (sender is UITableViewCell ? true : false)
         
+        if whoIsSender {
+            let cell = sender as! UITableViewCell
+            let indexPath = tableView.indexPathForCell(cell)
+            let image = images! [indexPath!.row]
+            
+            let detailViewController = segue.destinationViewController as! DetailViewController
+            detailViewController.image = image
+            
+            detailViewController.fPrice = price
+            detailViewController.fWait = wait
+            
+        }
+    }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
+}

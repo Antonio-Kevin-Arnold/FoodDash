@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F23B125C5251400079A9318 /* Pods_FoodRun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDCDD00D62B60879B5922A5 /* Pods_FoodRun.framework */; };
+		8735306C1CC6F6F400CA7C7F /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735306B1CC6F6F400CA7C7F /* SummaryViewController.swift */; };
 		87635D831CB0A9FA005D1A99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87635D821CB0A9FA005D1A99 /* AppDelegate.swift */; };
 		87635D881CB0A9FA005D1A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87635D861CB0A9FA005D1A99 /* Main.storyboard */; };
 		87635D8D1CB0A9FA005D1A99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87635D8B1CB0A9FA005D1A99 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8735306B1CC6F6F400CA7C7F /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		87635D7F1CB0A9FA005D1A99 /* FoodRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87635D821CB0A9FA005D1A99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87635D871CB0A9FA005D1A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				87EE043A1CBD965F0095F563 /* FoodCell.swift */,
 				87DC371E1CC0951400F019A3 /* DetailViewController.swift */,
 				87DC37201CC1607500F019A3 /* MapViewController.swift */,
+				8735306B1CC6F6F400CA7C7F /* SummaryViewController.swift */,
 				87635D821CB0A9FA005D1A99 /* AppDelegate.swift */,
 				87635D861CB0A9FA005D1A99 /* Main.storyboard */,
 				87635D8B1CB0A9FA005D1A99 /* LaunchScreen.storyboard */,
@@ -225,6 +228,7 @@
 				87635D831CB0A9FA005D1A99 /* AppDelegate.swift in Sources */,
 				87DC37211CC1607500F019A3 /* MapViewController.swift in Sources */,
 				87DC371F1CC0951400F019A3 /* DetailViewController.swift in Sources */,
+				8735306C1CC6F6F400CA7C7F /* SummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

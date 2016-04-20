@@ -15,9 +15,17 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var foodLocation: UILabel!
     @IBOutlet weak var foodItem: UILabel!
+    @IBOutlet weak var foodPrice: UILabel!
+    @IBOutlet weak var foodWait: UILabel!
+    
+    var fPrice: Double = 0.0
+    var fWait: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        foodPrice.text = "$" + String(format: "%.02f", fPrice)
+        foodWait.text = String (fWait) + " Minutes"
         
         let image1 = image["images"] as! [String: AnyObject]
         let image2 = image1["standard_resolution"] as! [String: AnyObject]
@@ -49,14 +57,17 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let mapViewController = segue.destinationViewController as! MapViewController
+        mapViewController.location = image
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
 
 }
