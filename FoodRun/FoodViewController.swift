@@ -55,6 +55,7 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 }
         })
         task.resume()
+            
         // Do any additional setup after loading the view.
     }
 
@@ -76,11 +77,6 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let cell = tableView.dequeueReusableCellWithIdentifier("FoodCell", forIndexPath: indexPath) as! FoodCell
         
-        if (cell.highlighted == true)
-            {
-                print("hi")
-            }
-        
         let image = images![indexPath.row]
         
             let image1 = image["images"] as! [String: AnyObject]
@@ -94,8 +90,6 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func refreshControlAction(refreshControl: UIRefreshControl) {
-        tableView.dataSource = self
-        tableView.delegate = self
         self.tableView.reloadData()
         refreshControl.endRefreshing()
     }
