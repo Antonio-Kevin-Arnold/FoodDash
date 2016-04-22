@@ -18,6 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //UINavigationBar.appearance().setBackgroundImage(UIImage(named: "NavigationBar.jpg")!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 0, 0, 0), resizingMode: .Stretch), forBarMetrics: .Default)
 
+        let titleFont = [
+            NSForegroundColorAttributeName : UIColor.redColor(),
+            NSFontAttributeName : UIFont(name: "Futura", size: 26)!
+        ]
+        
+        UINavigationBar.appearance().titleTextAttributes = titleFont
+        
         return true
     }
 
