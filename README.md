@@ -20,9 +20,6 @@ From 5k to Couch
 - [X] Running Hamburger Logo as BarButtonItem
 - [X] Pop-up notification when adding a food item
 
-## Wireframe
-<img src='http://i.imgur.com/MFio9CA.jpg' title='Wireframe' width='' alt='Wireframe' />
-
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
