@@ -9,11 +9,13 @@ From 5k to Couch
 - [X] Detail view controller when clicking on the tableview cell that details the location, item, price and estimated wait
 - [X] Map view controller that displays the location of the selected restaurant and the user's location
 - [ ] Summary view controller that details the total price and time of all locations selected
-
 ## Optionals
 - [X] Launch Screen
 - [X] Progress HUD
 - [X] Pull to Refresh
+- [X] Custom food background
+- [X] Custom Font
+- [X] Running Hamburger Logo as BarButtonItem
 
 ## Wireframe
 <img src='http://i.imgur.com/MFio9CA.jpg' title='Wireframe' width='' alt='Wireframe' />
