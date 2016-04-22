@@ -1,7 +1,7 @@
 # FoodRun
 From 5k to Couch
 
-**FoodRun** is a foodie app dedicated to helping people find and locate top trending food in New York City
+**FoodRun** is a foodie app dedicated to helping people find and locate the top trending food in New York City
 
 ## User Stories
 
