@@ -14,7 +14,7 @@ From 5k to Couch
 - [X] Launch Screen
 - [X] Progress HUD
 - [X] Pull to Refresh
-- [X] Custom food background
+- [X] Custom Food Background
 - [X] Custom Font
 - [X] Running Hamburger Logo as BarButtonItem
 
