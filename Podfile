@@ -3,10 +3,9 @@
 # Uncomment this line if you're using Swift
 use_frameworks!
 
-target 'FoodRun' do
+target 'FoodDash' do
 
 pod 'AFNetworking', '3.0.0'
 pod 'MBProgressHUD', '0.9.2'
 
 end
-

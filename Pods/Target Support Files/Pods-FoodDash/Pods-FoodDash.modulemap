@@ -1,0 +1,6 @@
+framework module Pods_FoodDash {
+  umbrella header "Pods-FoodDash-umbrella.h"
+
+  export *
+  module * { export * }
+}

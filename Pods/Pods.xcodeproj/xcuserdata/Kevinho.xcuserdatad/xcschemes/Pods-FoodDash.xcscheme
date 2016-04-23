@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '231A82E108A187D5777292DF'
-               BlueprintName = 'AFNetworking'
+               BlueprintIdentifier = '29C8161781CDCB9BA8A6B47B'
+               BlueprintName = 'Pods-FoodDash'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'AFNetworking.framework'>
+               BuildableName = 'Pods_FoodDash.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
