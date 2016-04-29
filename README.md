@@ -25,7 +25,7 @@ From 5k to Couch
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/IF53khA.gif' title='FoodDash' width='' alt='FoodDash' />
+<img src='http://i.imgur.com/IF53khA.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
