@@ -19,12 +19,13 @@ From 5k to Couch
 - [X] Custom Font
 - [X] Running Hamburger Logo as BarButtonItem
 - [X] Pop-up notification when adding a food item
+- [X] Provides Directions
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/IF53khA.gif' title='FoodDash' width='' alt='FoodDash' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
