@@ -27,6 +27,8 @@ Here's a walkthrough of implemented user stories:
 
 <img src='http://i.imgur.com/m1GmVeQ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <blockquote class="imgur-embed-pub" lang="en" data-id="m1GmVeQ" data-context="false"><a href="//imgur.com/m1GmVeQ">Link to Demo</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<img src='https://github.com/Antonio-Kevin-Arnold/FoodDash/blob/master/FoodDashGIF.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
