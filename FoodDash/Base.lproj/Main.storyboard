@@ -69,7 +69,8 @@
                                 <rect key="frame" x="87" y="39" width="200" height="200"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kor-jN-j9c">
-                                <rect key="frame" x="168" y="452" width="39" height="30"/>
+                                <rect key="frame" x="166" y="451" width="42" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="onResetTap:" destination="lXs-Zu-xD9" eventType="touchUpInside" id="lO8-M4-ARS"/>
@@ -166,17 +167,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mF7-4r-BiF">
                                 <rect key="frame" x="37" y="34" width="300" height="300"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvV-YS-o4D">
-                                <rect key="frame" x="165" y="531" width="44" height="44"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" image="RunningBurger">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="addFoodTap:" destination="dNa-b7-AXl" eventType="touchUpInside" id="m7W-k0-iNU"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estimated Wait" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6j-CM-M10">
                                 <rect key="frame" x="23" y="483" width="115" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -227,6 +217,16 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvV-YS-o4D">
+                                <rect key="frame" x="160" y="523" width="55" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" image="inverse">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addFoodTap:" destination="dNa-b7-AXl" eventType="touchUpInside" id="m7W-k0-iNU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -279,7 +279,6 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="iZ8-tY-Ull">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -300,5 +299,6 @@
         <image name="Background" width="750" height="1334"/>
         <image name="LargeBurger" width="200" height="200"/>
         <image name="RunningBurger" width="33" height="33"/>
+        <image name="inverse" width="500" height="500"/>
     </resources>
 </document>

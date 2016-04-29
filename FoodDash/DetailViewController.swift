@@ -19,11 +19,19 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var foodWait: UILabel!
     @IBOutlet weak var addFood: UIButton!
     
+    let priceArray = [5.50, 5.99, 6.95, 8.00, 6.00, 7.50, 6.99, 5.00, 7.99, 6.50, 5.50, 5.99, 6.95, 8.00, 6.00, 7.50, 6.99, 5.00, 7.99, 6.50, 5.50, 5.99, 6.95, 8.00, 6.00, 7.50, 6.99, 5.00, 7.99, 6.50, 5.50, 5.99, 6.95]
+    let waitArray = [15, 35, 40, 20, 10, 30, 45, 25, 35, 10, 15, 45, 30, 25, 20, 15, 35, 40, 20, 10, 30, 45, 25, 35, 10, 15, 45, 30, 25, 20, 35, 10, 15]
+    
     var fPrice: Double = 0.0
     var fWait: Int = 0
     
+    var indexPath = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        fPrice = priceArray[indexPath]
+        fWait = waitArray[indexPath]
         
         foodPrice.text = "$" + String(format: "%.02f", fPrice)
         foodWait.text = String (fWait) + " Minutes"

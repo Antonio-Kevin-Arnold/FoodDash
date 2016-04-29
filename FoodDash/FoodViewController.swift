@@ -16,9 +16,6 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var images: [NSDictionary]?
     
-    var price: Double = 5.99
-    var wait: Int = 35
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,13 +30,15 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let url = NSURL(string: "https://api.instagram.com/v1/users/338693018/media/recent/?access_token=2253563781.137bf98.bd1c3693d2b84f80a7ab8d661f641437&count=33")
         
+        // Alternate Access Token: 38926617.660d11e.260b7826ccdd4610be69bf30f8f07df5
+        
         let request = NSURLRequest(URL: url!)
         let session = NSURLSession(
             configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
             delegate: nil,
             delegateQueue: NSOperationQueue.mainQueue()
         )
-        
+
         MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         
         let task: NSURLSessionDataTask = session.dataTaskWithRequest(request,
@@ -129,12 +128,9 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
             let cell = sender as! UITableViewCell
             let indexPath = tableView.indexPathForCell(cell)
             let image = images! [indexPath!.row]
-            
             let detailViewController = segue.destinationViewController as! DetailViewController
             detailViewController.image = image
-            
-            detailViewController.fPrice = price
-            detailViewController.fWait = wait
+            detailViewController.indexPath = indexPath!.row
         }
     }
         // Get the new view controller using segue.destinationViewController.
