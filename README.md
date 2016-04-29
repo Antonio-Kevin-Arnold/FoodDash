@@ -25,7 +25,7 @@ From 5k to Couch
 
 Here's a walkthrough of implemented user stories:
 
-![alt tag](http://i.imgur.com/m1GmVeQ.gifv)
+![alt tag](http://i.imgur.com/m1GmVeQ.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
