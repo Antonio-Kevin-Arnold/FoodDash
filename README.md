@@ -25,7 +25,8 @@ From 5k to Couch
 
 Here's a walkthrough of implemented user stories:
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="m1GmVeQ"><a href="//imgur.com/m1GmVeQ">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<img src='http://i.imgur.com/IF53khA.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![alt tag](http://imgur.com/m1GmVeQ)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
