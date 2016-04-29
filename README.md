@@ -1,6 +1,7 @@
 # FoodDash - From 5k to Couch
 
 **FoodDash** is a foodie app dedicated to helping people find and locate the top trending food in New York City
+
 ## User Stories
 
 - [X] Pulls images from the Instagram API
